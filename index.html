@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Laboratorio de ideas: ¿cuál te serviría?</title>
+<style>
+  :root { --fg:#1b1f24; --bg:#ffffff; --muted:#57606a; --line:#d0d7de; --accent:#0b5fff; --card:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#9da7b3; --line:#30363d; --accent:#58a6ff; --card:#161b22; } }
+  body { margin:0; font:16px/1.55 system-ui, sans-serif; color:var(--fg); background:var(--bg); }
+  main { max-width:44rem; margin:0 auto; padding:2rem 1rem 4rem; }
+  h1 { font-size:1.7rem; line-height:1.25; }
+  .aviso { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.9rem 1rem; }
+  .idea { border:1px solid var(--line); border-radius:8px; padding:1rem; margin:1rem 0; }
+  .idea h2 { margin:.1rem 0 .4rem; font-size:1.15rem; }
+  a.boton { display:inline-block; margin-top:.4rem; padding:.5rem .9rem; border-radius:6px; background:var(--accent); color:#fff; text-decoration:none; }
+  small, .nota { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Estamos decidiendo qué herramienta pequeña construir. ¿Cuál usarías?</h1>
+
+  <p class="aviso"><strong>Transparencia:</strong> ninguna de estas herramientas existe todavía. Esta página solo mide interés para decidir si merece la pena construirlas.
+  <strong>No se cobra nada, no pedimos tarjeta ni correo.</strong> Si te interesa una, pulsa su botón: se abre un formulario de GitHub que crea una
+  <strong>incidencia pública</strong> con tu usuario de GitHub (necesitas una cuenta). Nada más. Puedes borrarla cuando quieras.</p>
+
+  <section class="idea">
+    <h2>A. Vigilante de caducidades</h2>
+    <p>Te avisa antes de que caduque un dominio, un certificado TLS o una licencia de las webs y servicios de tus clientes. Pensado para agencias y
+    autónomos que gestionan varias webs.</p>
+    <a class="boton" href="https://github.com/gioma76/waitlist-lab/issues/new?template=interes-a-caducidades.yml">Me interesa la A</a>
+  </section>
+
+  <section class="idea">
+    <h2>B. Informe semanal de tus webs</h2>
+    <p>Un resumen automático por correo de las webs que mantienes: caídas, velocidad, enlaces rotos. Pensado para freelancers que cuidan webs de clientes.</p>
+    <a class="boton" href="https://github.com/gioma76/waitlist-lab/issues/new?template=interes-b-informe-semanal.yml">Me interesa la B</a>
+  </section>
+
+  <section class="idea">
+    <h2>C. Recordatorio de cobros pendientes</h2>
+    <p>Avisos amables y programados a tus clientes cuando una factura sigue sin pagarse. Sin pasarela de pago: solo recordatorios.</p>
+    <a class="boton" href="https://github.com/gioma76/waitlist-lab/issues/new?template=interes-c-cobros.yml">Me interesa la C</a>
+  </section>
+
+  <p class="nota">Ya existen herramientas parecidas en el mercado. Lo que queremos saber es si, aun así, alguna de estas ideas te resolvería un problema real.
+  Los resultados (número de personas interesadas por idea) se publican en este mismo repositorio. No es asesoramiento legal, fiscal ni financiero.</p>
+  <small>Experimento en curso. Sin analítica, sin cookies, sin scripts de terceros.</small>
+</main>
+</body>
+</html>
