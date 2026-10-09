@@ -1,0 +1,38 @@
+name: "Piloto 1. Auditoria de accesibilidad web"
+description: "Indica si te interesaria este piloto a este precio. Es publico. Por ahora solo se recoge interes: no se cobra nada."
+title: "[piloto] 1. Auditoria de accesibilidad web"
+labels: ["piloto"]
+body:
+  - type: markdown
+    attributes:
+      value: "Piloto 1: Auditoria de accesibilidad web. Precio: 290 EUR por web (precio unico, hasta 15 paginas). Esta incidencia es publica y muestra tu usuario de GitHub. No incluyas datos personales, ni de clientes, ni datos de pago. El servicio aun no esta operativo para cobro: solo se recoge interes y no se acepta ningun pago."
+  - type: dropdown
+    id: decision
+    attributes:
+      label: "Pagarias este piloto a este precio?"
+      options:
+        - "Si, pagaria el piloto a este precio si se entrega como se describe"
+        - "Si me interesa, pero a otro precio"
+        - "No por ahora, solo curiosidad"
+    validations:
+      required: true
+  - type: dropdown
+    id: rol
+    attributes:
+      label: "Cual es tu caso?"
+      options:
+        - "Tienda online"
+        - "Pyme con web corporativa"
+        - "Agencia o desarrollador web"
+        - "Administracion o entidad publica"
+        - "Otro"
+    validations:
+      required: true
+  - type: input
+    id: precio
+    attributes:
+      label: "Si no te encaja el precio, cuanto pagarias? (opcional)"
+  - type: input
+    id: hoy
+    attributes:
+      label: "Como lo resuelves hoy? (opcional, sin datos personales)"

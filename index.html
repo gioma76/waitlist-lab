@@ -4,49 +4,59 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow">
-<title>Laboratorio de ideas: ¿cuál te serviría?</title>
+<title>Servicios piloto con precio: accesibilidad web, CAE y CBAM</title>
 <style>
   :root { --fg:#1b1f24; --bg:#ffffff; --muted:#57606a; --line:#d0d7de; --accent:#0b5fff; --card:#f6f8fa; }
   @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#9da7b3; --line:#30363d; --accent:#58a6ff; --card:#161b22; } }
   body { margin:0; font:16px/1.55 system-ui, sans-serif; color:var(--fg); background:var(--bg); }
-  main { max-width:44rem; margin:0 auto; padding:2rem 1rem 4rem; }
+  main { max-width:46rem; margin:0 auto; padding:2rem 1rem 4rem; }
   h1 { font-size:1.7rem; line-height:1.25; }
   .aviso { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.9rem 1rem; }
-  .idea { border:1px solid var(--line); border-radius:8px; padding:1rem; margin:1rem 0; }
-  .idea h2 { margin:.1rem 0 .4rem; font-size:1.15rem; }
+  .oferta { border:1px solid var(--line); border-radius:8px; padding:1rem; margin:1rem 0; }
+  .oferta h2 { margin:.1rem 0 .4rem; font-size:1.15rem; }
+  .precio { font-size:1.25rem; font-weight:700; }
   a.boton { display:inline-block; margin-top:.4rem; padding:.5rem .9rem; border-radius:6px; background:var(--accent); color:#fff; text-decoration:none; }
   small, .nota { color:var(--muted); }
 </style>
 </head>
 <body>
 <main>
-  <h1>Estamos decidiendo qué herramienta pequeña construir. ¿Cuál usarías?</h1>
+  <h1>Tres servicios piloto con precio cerrado. ¿Alguno te sirve?</h1>
 
-  <p class="aviso"><strong>Transparencia:</strong> ninguna de estas herramientas existe todavía. Esta página solo mide interés para decidir si merece la pena construirlas.
-  <strong>No se cobra nada, no pedimos tarjeta ni correo.</strong> Si te interesa una, pulsa su botón: se abre un formulario de GitHub que crea una
-  <strong>incidencia pública</strong> con tu usuario de GitHub (necesitas una cuenta). Nada más. Puedes borrarla cuando quieras.</p>
+  <p class="aviso"><strong>Aviso: por ahora solo recogemos interés.</strong> El servicio aún no está operativo para cobro: no se cobra nada y no se acepta
+  ningún pago. Son servicios piloto que aún no se han entregado a ningún cliente. Si uno te interesa, pulsa su botón: se abre un formulario de GitHub
+  que crea una <strong>incidencia pública</strong> con tu usuario de GitHub (necesitas una cuenta), donde indicas si te interesaría a ese precio.
+  No se piden datos de pago ni correo; tu usuario de GitHub sí será visible en la incidencia. La persona responsable del experimento puede responderte
+  en la misma incidencia. No es asesoramiento legal, fiscal ni técnico vinculante, ni una certificación.</p>
 
-  <section class="idea">
-    <h2>A. Vigilante de caducidades</h2>
-    <p>Te avisa antes de que caduque un dominio, un certificado TLS o una licencia de las webs y servicios de tus clientes. Pensado para agencias y
-    autónomos que gestionan varias webs.</p>
-    <a class="boton" href="https://github.com/gioma76/waitlist-lab/issues/new?template=interes-a-caducidades.yml">Me interesa la A</a>
+  <section class="oferta">
+    <h2>1. Auditoría de accesibilidad de tu web</h2>
+    <p>Revisión de hasta 15 páginas frente a WCAG 2.1 nivel AA (la referencia técnica de la norma europea EN 301 549), con herramientas automáticas
+    y revisión manual. Recibes un informe con los fallos priorizados por impacto y cómo corregir cada uno. Pensado para tiendas online y pymes
+    afectadas por las obligaciones de accesibilidad.</p>
+    <p class="precio">290 € por web (precio único)</p>
+    <a class="boton" href="https://github.com/gioma76/waitlist-lab/issues/new?template=piloto-1-accesibilidad.yml">Me interesa este piloto</a>
   </section>
 
-  <section class="idea">
-    <h2>B. Informe semanal de tus webs</h2>
-    <p>Un resumen automático por correo de las webs que mantienes: caídas, velocidad, enlaces rotos. Pensado para freelancers que cuidan webs de clientes.</p>
-    <a class="boton" href="https://github.com/gioma76/waitlist-lab/issues/new?template=interes-b-informe-semanal.yml">Me interesa la B</a>
+  <section class="oferta">
+    <h2>2. Pre-cálculo y revisión documental de expedientes CAE</h2>
+    <p>Para sujetos delegados y empresas de servicios energéticos: calculamos el ahorro con la ficha estandarizada aplicable del catálogo oficial
+    y comprobamos que el expediente lleva la documentación que pide, antes de enviarlo a verificación. La presentación y la responsabilidad del
+    expediente siguen siendo tuyas.</p>
+    <p class="precio">25 € por expediente (mínimo 10 expedientes)</p>
+    <a class="boton" href="https://github.com/gioma76/waitlist-lab/issues/new?template=piloto-2-cae.yml">Me interesa este piloto</a>
   </section>
 
-  <section class="idea">
-    <h2>C. Recordatorio de cobros pendientes</h2>
-    <p>Avisos amables y programados a tus clientes cuando una factura sigue sin pagarse. Sin pasarela de pago: solo recordatorios.</p>
-    <a class="boton" href="https://github.com/gioma76/waitlist-lab/issues/new?template=interes-c-recordatorios.yml">Me interesa la C</a>
+  <section class="oferta">
+    <h2>3. Borrador de la documentación CBAM para importadores</h2>
+    <p>A partir de tus datos de importación y de la información de emisiones de tus proveedores, preparamos un borrador de la documentación CBAM que te
+    corresponda presentar y la lista de datos que faltan. La presentas tú o tu representante aduanero; un borrador no sustituye a la verificación exigida.</p>
+    <p class="precio">150 € al mes (mínimo 3 meses)</p>
+    <a class="boton" href="https://github.com/gioma76/waitlist-lab/issues/new?template=piloto-3-cbam.yml">Me interesa este piloto</a>
   </section>
 
-  <p class="nota">Ya existen herramientas parecidas en el mercado. Lo que queremos saber es si, aun así, alguna de estas ideas te resolvería un problema real.
-  Cuando haya resultados (número de personas interesadas por idea), se publicarán en esta misma web. No es asesoramiento legal, fiscal ni financiero.</p>
+  <p class="nota">Ya existen empresas y herramientas que ofrecen servicios parecidos. Queremos saber si, a estos precios, alguno de estos pilotos te
+  resolvería un problema real. Los resultados (número de personas por piloto) se publicarán a mano en esta misma web al cerrar el experimento.</p>
   <small>Experimento en curso. Sin analítica, sin cookies, sin scripts de terceros.</small>
 </main>
 </body>
